@@ -17,6 +17,12 @@ end
 
 module Nogent
   class Application < Rails::Application
+    config.time_zone = 'Beijing'
+    config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**' ,'*.{rb,yml}').to_s]
+    config.i18n.default_locale = "zh-CN"
+    Time::DATE_FORMATS.merge!(:default => "%Y/%m/%d %H:%M:%S", :ymd => "%Y/%m/%d")
+
+
 
     # don't generate RSpec tests for views and helpers
     config.generators do |g|
