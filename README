@@ -1,0 +1,4 @@
+RECIPES
+["amalgam", "extras", "gems", "git", "setup", "testing", "xtunes", "xtunes_apps", "xtunes_extras"]
+PREFERENCES
+{:xtunes_apps=>"basic_mongoid", :dev_webserver=>"webrick", :prod_webserver=>nil, :database=>"mongodb", :orm=>"mongoid", :templates=>"haml", :unit_test=>"rspec", :fixtures=>"factory_girl", :integration=>"none", :frontend=>"none", :form_builder=>"none", :authorization=>"none", :quiet_assets=>true, :local_env_file=>false, :better_errors=>true, :ban_spiders=>false, :rvmrc=>false, :github=>false, :amalgam=>false, :git=>true, :email=>"none"}
