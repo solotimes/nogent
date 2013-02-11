@@ -197,3 +197,6 @@ zh-CN:
   activerecord:
     errors:
       <<: *errors
+  mongoid:
+    errors:
+      <<: *errors

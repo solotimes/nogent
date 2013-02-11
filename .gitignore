@@ -28,6 +28,7 @@ db/*.sqlite3
 .sass-cache
 /config/config.yml
 /config/database.yml
+/config/mongoid.yml
 /coverage.data
 /coverage/
 /db/*.javadb/
@@ -75,3 +76,6 @@ pickle-email-*.html
 
 # vim artifacts
 **.swp
+config/settings.local.yml
+config/settings/*.local.yml
+config/environments/*.local.yml
