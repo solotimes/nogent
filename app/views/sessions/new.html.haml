@@ -1,0 +1,31 @@
+.container
+  - if flash[:alert] || flash[:error]
+    .alert.alert-error
+      %a.close{ :data => { :dismiss => "alert"}, :href => "#"}
+        &times;
+      = flash[:alert] || flash[:error]
+  .login-box
+    .top
+      %h1= t('site_name')
+    = form_tag(sessions_path)do
+      %fieldset
+        .control-groups
+          .controls<
+            .input-append<
+              =text_field_tag "user[login]",nil, :required => true, :autofocus => true ,:placeholder => User.human_attribute_name(:login)
+              %span.add-on
+                %i.icon-user
+        .control-groups
+          .controls<
+            .input-append<
+              =password_field_tag "user[password]",nil, :required => true, :autofocus => true ,:placeholder => User.human_attribute_name(:password)
+              %span.add-on
+                %i.icon-lock
+        .control-groups.actions
+          .controls<
+            =button_tag t('.login'), :class => 'btn-primary btn'
+        .control-groups
+          .controls
+            %label.checkbox
+              =check_box_tag :remember_me
+              =t('.remember_me')

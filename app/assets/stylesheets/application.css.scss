@@ -1,0 +1,65 @@
+/*
+ *= require app_bootstrap
+ *= require common
+ *= require_self
+ */
+@import 'mixins';
+.new_sessions{
+  .container{
+    margin-top: 80px;
+  }
+  .alert {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .login-box {
+    background: #fff;
+    border: 1px solid #c2c2c2;
+    @include border-radius(4px);
+    width: 300px;
+    margin: 0 auto;
+    position: relative;
+
+    .top{
+      background: #f8f8f8;
+      height: 50px;
+      border: none;
+      @include border-radius(4px 4px 0 0);
+      border-bottom: 1px solid #e4e6e8;
+      h1{
+        font-size: 14px;
+        line-height: 50px;
+        color: #525252;
+        margin: 0;
+      }
+      padding: 0 27px 0;
+    }
+
+    form{
+      margin-top: 15px;
+      padding:0 23px 0 27px;
+    }
+    .controls{
+      margin-bottom: 10px;
+      input[type=text],input[type=password]{
+        height:25px;
+        display: inline;
+      }
+      .add-on{
+        height:21px;
+        width:21px;
+        padding-top:8px;
+      }
+      .input-append input{
+        width:204px;
+      }
+    }
+    .actions{
+      float:right;
+      .btn{
+        margin: 0;
+      }
+    }
+  }
+}
