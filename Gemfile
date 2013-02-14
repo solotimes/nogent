@@ -24,3 +24,4 @@ gem "inherited_resources"
 gem "rails_config"
 gem 'kaminari'
 gem 'simple_form'
+gem 'bcrypt-ruby', '~> 3.0.0'
